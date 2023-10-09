@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: darkolivegreen;
+    background: url(https://t3.ftcdn.net/jpg/06/10/04/90/360_F_610049025_bn0SJ4HKhcCitewO7NX8EJ6CgXvljFGn.jpg)
+}
+#app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 300px;
+    padding: 1rem;
+    
+    color: white;
+}
+section.header {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+section.inputs {
+    margin: 1rem;
+}
+input {
+    margin: 0.25rem 0 0 0;
+    height: 20px;
+    width: 100%;
+}
+input.full {
+    width: 100%;
+}
+input.half {
+    width: 49.2%;
+}
+
+section.buttons {
+    width: 100%;
+    display: flex;
+}
+section.launch {
+    width: 100%;
+}
+button {
+    margin:0%;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    width: 50%;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+button.tools {
+    background-color: black;
+    color: antiquewhite;
+}
+button:hover {
+    box-shadow: 0 0 0 0.5rems;
+    background-color: gray;
+}
+button.fire {
+    background-color: brown;
+    color: antiquewhite;
+}
+button.fire:hover {
+    box-shadow: 0 0 0 0.5rems;
+    background-color: lightcoral;
+}

@@ -1,0 +1,36 @@
+{
+    "manifest_version": 3,
+    "name": "Tanks - Job Application Autofill",
+    "description": "Autofill data within job applications to speed up and blow through the search process",
+    "version": "1.0",
+    "icons": {
+        "16": "/images/icon-16.png",
+        "48": "/images/icon-48.png",
+        "128": "/images/icon-128.png"
+    },
+    "action": {
+        "defualt_icon": {
+            "16": "/images/icon-16.png",
+            "48": "/images/icon-48.png",
+            "128": "/images/icon-128.png"
+        },
+        "permissions": [
+            "tabs",
+            "storage",
+            "activeTab",
+            "declarativeContent",
+            "http://127.0.0.1:5500/index.html",
+            "http://*/*",
+            "https://*/*"
+        ],
+        "default_popup": "./popup/popup.html"
+    },
+    "content_scripts": [{
+        "matches": [
+            "*://www.google.com/*",
+            "<all_urls>"
+        ],
+        "css": ["main.css"],
+        "js": ["./js/findcontent.js"]
+    }]
+}

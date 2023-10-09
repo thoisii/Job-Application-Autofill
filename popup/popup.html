@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tank!</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+    <div id="app">
+
+        <section class="header">
+            <h1>welovetanks</h1>   
+        </section>
+
+        <p>form autofill</p>
+
+        <section class="inputs">
+            <!-- user data input content -->
+            <input type="text" id="first"  placeholder="First Name" class="half">
+            <input type="text" id="last"  placeholder="Last Name" class="half">
+
+            <input type="text" id="email" placeholder="Email">
+            <input type="text" id="tele" placeholder="Phone#" class="half">
+            <input type="text" id="address" placeholder="Address">
+            <input type="text" id="city" placeholder="City" class="half">
+            <input type="text" id="zipcode" placeholder="Zipcode" class="half">
+
+        </section>
+
+
+        <section class="buttons">
+            <!-- Save button -->
+            <button class="tools" id="save">Save</button>
+            <!-- load button -->
+            <button class="tools" id="load">Load</button>
+        </section>
+
+        <section class="launch">
+            <!-- launch button -->
+            <button class="fire" id="autofill">FIRE</button>
+        </section>
+
+    </div>
+    <!-- autofill script -->
+    <script async src='../js/datascript.js'></script>
+</body>
+</html>
